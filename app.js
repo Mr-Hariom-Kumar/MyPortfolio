@@ -77,11 +77,17 @@ app.post("/sendmail",async (req,res)=>{
     const {name,email,message,otp}=req.body;
     //verify
     const genOtp=Math.floor(100000 + Math.random() * 900000);
-    await generateOTP(email,genOtp);
+    const sendotp=document.querySelector(".sendotp")
+    sendotp.addEventListener("click",async ()=>{
+        await generateOTP(email,genOtp);
+    })
+    
 
     if(Number(otp)==Number(genOtp)){
-       await  sendmsg(email,message,name);
-       send
+        const sendmsg=document.querySelector(".sendmsg");
+        sendmsg.addEventListener("click",async ()=>{
+            await  sendmsg(email,message,name);
+        })
         req.flash("success","your message was sent successfully! Thankyou");
         res.redirect("https://mr-hariom-kumar.github.io/MyPortfolio/");
     }else{

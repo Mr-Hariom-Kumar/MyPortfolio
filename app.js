@@ -73,15 +73,15 @@ async function sendmsg (email,msg,name){
 };
 
 
-app.post("/sendmail",(req,res)=>{
+app.post("/sendmail",async (req,res)=>{
     const {name,email,message,otp}=req.body;
     //verify
     const genOtp=Math.floor(100000 + Math.random() * 900000);
-    generateOTP(email,genOtp);
+    await generateOTP(email,genOtp);
 
-    req.session.tempUser={email,genOtp};
     if(Number(otp)==Number(genOtp)){
-        sendmsg(email,message,name);
+       await  sendmsg(email,message,name);
+       send
         req.flash("success","your message was sent successfully! Thankyou");
         res.redirect("https://mr-hariom-kumar.github.io/MyPortfolio/");
     }else{

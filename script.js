@@ -1,3 +1,4 @@
+
 let but=document.querySelector("#btn");
 but.addEventListener('click',(evebt)=>{
     let inp=document.querySelector("#message");

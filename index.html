@@ -50,7 +50,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Hello, I'm <strong>Hariom Kumar</strong>, a passionate and dedicated front-end developer currently pursuing a BTech in CSE (Business System) at Techno Main, Salt Lake. I specialize in building responsive and user-friendly websites with technologies like HTML, CSS, JavaScript, and Python. 
+                        Hello, I'm <strong>Hariom Kumar</strong>, a passionate and dedicated full stack developer currently pursuing a BTech in CSE (Business System) at Techno Main, Salt Lake. I specialize in building responsive and user-friendly websites with technologies like HTML, CSS, JavaScript, and Python. 
                     </p>
                     <p>
                         I'm always keen to learn new technologies, explore the latest trends in web development, and create clean, maintainable code. My ultimate goal is to contribute to projects that enhance user experiences and make an impact in the digital world.
@@ -165,20 +165,30 @@
     <div class="container">
         <h2>Contact Me</h2>
         <p>If you'd like to collaborate on a project, feel free to drop me a message below! or directly mail me on :<a href="https://mail.google.com/mail/u/0/#inbox?compose=new">766hariwork@gmail.com</a></p>
-        <form action="766hariwork@gmail.com" method="post" enctype="text/plain">
+        <form action="/sendmail" method="post" enctype="text/plain">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" placeholder="Your name" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required>
+            <div class="form-group col-12 " style="display: flex;">
+                <span>
+                     <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                </span>
+                <button class="btn btn-dark ms-3 col-3 mt-auto " style="height: 43px;">send otp</button>
+            </div>
+            <div class="form-group col-5" style="display: flex;">
+                <span>
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" id="otp" name="otp" placeholder="enter otp here" required> 
+                </span>
+                <button class="btn btn-success ms-3  mt-auto" style="height: 43px;">Verify</button>
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
             </div>
-            <button type="submit" class="btn" id="btn">Send Message</button>
+            <button type="submit" class="btn btn-dark" id="btn">Send Message</button>
         </form>
     </div>
     <div class="social" >
@@ -219,5 +229,6 @@
     </div>
 </footer>
     <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

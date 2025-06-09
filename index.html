@@ -50,17 +50,20 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Hello, I'm <strong>Hariom Kumar</strong>, a passionate and dedicated full stack developer currently pursuing a BTech in CSE (Business System) at Techno Main, Salt Lake. I specialize in building responsive and user-friendly websites with technologies like HTML, CSS, JavaScript, and Python. 
+                        Hello, I'm <strong>Hariom Kumar</strong>, a passionate and dedicated full stack developer and c++ programmer currently pursuing a BTech in CSE (Business System) at Techno Main, Salt Lake. I specialize in building responsive and user-friendly websites with technologies like HTML, CSS, JavaScript  and MERN stack. 
                     </p>
                     <p>
-                        I'm always keen to learn new technologies, explore the latest trends in web development, and create clean, maintainable code. My ultimate goal is to contribute to projects that enhance user experiences and make an impact in the digital world.
+                        recentaly i have completed my <b>internship</b> at <a href="https://bluestock.in/" style="text-decoration: none;">Bluestock Fintech</a> a startup company on the position of SDE.
                     </p>
                     <p>
-                        Besides coding, I enjoy playing cricket, exploring new tech trends, and uploading Ai generated Music on <a href="https://www.youtube.com/@iToneForMusic">My  Youtube  channel</a>.
+                        I'm always keen to solve problem on various competitive programming platform like <b>codeforce ,leet code </b> and learn new technologies, explore the latest trends in web development, and create clean, maintainable code. My ultimate goal is to contribute to projects that enhance user experiences and make an impact in the digital world. doing coding is a part of my game and enjoyment rather a burden. so simply i love coding ❤️.
+                    </p>
+                    <p>
+                        Besides coding, I enjoy playing cricket, exploring new tech trends, and uploading Ai generated Music on <a href="https://www.youtube.com/@TheUnderratedEngineer">My  Youtube  channel</a>.
                     </p>
                 </div>
                 <div class="about-image">
-                    <img src="profile.jpg" alt="Hariom Kumar Profile Picture">
+                    <img src="pro-photo.jpg" alt="Hariom Kumar Profile Picture">
                 </div>
             </div>
         </div>
@@ -103,6 +106,22 @@
             <div class="skill">
                 <h3>React js</h3>
                 <img src="react.png">
+            </div>
+            <div class="skill">
+                <h3>MongoDB</h3>
+                <img src="mongo.png">
+            </div>
+            <div class="skill">
+                <h3>mysql</h3>
+                <img src="mysql.png">
+            </div>
+            <div class="skill">
+                <h3>c++</h3>
+                <img src="c++.png">
+            </div>
+            <div class="skill">
+                <h3>Express js</h3>
+                <img src="Express.png">
             </div>
         </div>
     </div>
@@ -162,77 +181,17 @@
 
 <!-- Contact Section -->
 <section id="contact" class="contact">
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Me</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
 <div class="container mt-4">
   <h2>Contact Me</h2>
   <p>
-    If you'd like to collaborate on a project, feel free to drop me a message below!
-    Or directly mail me at:
-    <a href="mailto:766hariwork@gmail.com">766hariwork@gmail.com</a>
+    If you'd like to collaborate on a project, feel free to drop me a message below!:
+    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=DmwnWtDsVnfnDlfSWqZwQNntCBLHLQljnfwlbjBWGpQczZmcWjVqrhdHNCZtZnLTLhtvLMqcQsCq">766hariwork@gmail.com</a>
   </p>
 
-  <!-- Flash messages will be injected here by JS -->
-  <div id="flash-message"></div>
-
-  <!-- Send OTP Form -->
-  <form action="/send-otp" method="POST" class="mb-4">
-    <div class="row mb-3">
-      <div class="col-md-9">
-        <label for="otp-email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="otp-email" name="email" placeholder="Your email" required>
-      </div>
-      <div class="col-md-3 d-flex align-items-end">
-        <button type="submit" class="btn btn-dark w-100">Send OTP</button>
-      </div>
-    </div>
-  </form>
-
-  <!-- Final Message Form -->
-  <form action="/sendmail" method="POST">
-    <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="email" class="form-label">Email (must match OTP email)</label>
-      <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="otp" class="form-label">Enter OTP</label>
-      <input type="text" class="form-control" id="otp" name="otp" placeholder="Enter OTP here" required>
-    </div>
-
-    <div class="mb-3">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-success">Send Message</button>
-  </form>
 </div>
 
-<script>
-// Optional: Auto-read flash messages if passed as query params
-const params = new URLSearchParams(window.location.search);
-const flashBox = document.getElementById("flash-message");
 
-if (params.has("success")) {
-  flashBox.innerHTML = `<div class="alert alert-success">${params.get("success")}</div>`;
-} else if (params.has("error")) {
-  flashBox.innerHTML = `<div class="alert alert-danger">${params.get("error")}</div>`;
-}
-</script>
-</body>
-</html>
+
 
     <div class="social" >
         <h3>Find me on:</h4>
@@ -253,6 +212,10 @@ if (params.has("success")) {
                 <h5>Github</h4>
                 <a href="https://github.com/Mr-Hariom-Kumar"><img src="github-logo.png" id="connect"></a>
             </span>
+             <span class="media github" >
+                <h5>Codeforce</h4>
+                <a href="https://codeforces.com/profile/Hariom077"><img src="codeforce.png" id="connect" style="width: 100px;"></a>
+            </span>
         </div>
     </div>
 </section>
@@ -272,6 +235,6 @@ if (params.has("success")) {
     </div>
 </footer>
     <script src="script.js"></script>
-    <script src="app.js"></script>
+   
 </body>
 </html>
